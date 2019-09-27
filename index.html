@@ -12,8 +12,6 @@
         A Short Guide to Freezing Minion Waves in League of Legends
     </h1>
 
-    <img src="freeze.png" />
-
     <div>
         <h3>
             What are minions?
@@ -37,51 +35,73 @@
         During the lane phase, controlling where the minions fight is a very important skill, as it allows the player to play safer and be less susceptible to ganks while exposing the other laner. To this end, often it is a good idea to force the minions to fight near one's own turret as pictured below:
     </div>
 
+    <img src="freeze.png" alt="An example of correctly freezing enemy minion waves in front of a turret"/>
+
     <div>
-    <h3>
-        How to create a freeze?
-    </h3>
-    
-    There are multiple ways, including bouncing waves off of the opponents turret or by stacking the enemy minion wave near their own turret and then letting it push back towards your turret. Howver, the main secret is making sure that the enemy wave consists of at least 3 extra caster minions than your own wave. These extra enemy minions ensure that your minion wave dies faster, and thus you can keep the freeze. However, you must make sure that you 'cull' the enemy wave if it starts getting too big otherwise you'll have to tank minions until your next wave arrives. But be careful, for if you kill too many, you will lose your freeze!
+        <h3>
+            How to create a freeze?
+        </h3>
+        
+        There are multiple ways, including bouncing waves off of the opponents turret or by stacking the enemy minion wave near their own turret and then letting it push back towards your turret. Howver, the main secret is making sure that the enemy wave consists of at least 3 extra caster minions than your own wave. These extra enemy minions ensure that your minion wave dies faster, and thus you can keep the freeze. However, you must make sure that you 'cull' the enemy wave if it starts getting too big otherwise you'll have to tank minions until your next wave arrives. But be careful, for if you kill too many, you will lose your freeze!
 
-    Enemy caster minions are chosen because they have much less health and thus the freeze can be ended more easily whenever the player chooses. 
+        Enemy caster minions are chosen because they have much less health and thus the freeze can be ended more easily whenever the player chooses. 
 
-    To give some relative idea to these notions, the following table shows minion stats at the beginning of the game:
-
-
-    <table>
-        <tr>
-            <th>Minion Type</th>
-            <th>Health</th>
-            <th>Damage</th>
-            <th>Attack Speed</th>
-        </tr>
-        <tr>
-            <th>Melee</th>
-            <th>477</th>
-            <th>12</th>
-            <th>1.25</th>
-        </tr>
-        <tr>
-            <th>Caster</th>
-            <th>296</th>
-            <th>24</th>
-            <th>0.667</th>
-        </tr>
-        <tr>
-            <th>Siege</th>
-            <th>912</th>
-            <th>41</th>
-            <th>1.00</th>
-        </tr>
-    </table>
+        To give some relative idea to these notions, the following table shows minion stats at the beginning of the game:
+        <table>
+            <tr>
+                <th>Minion Type</th>
+                <th>Health</th>
+                <th>Damage</th>
+                <th>Attack Speed</th>
+            </tr>
+            <tr>
+                <th>Melee</th>
+                <th>477</th>
+                <th>12</th>
+                <th>1.25</th>
+            </tr>
+            <tr>
+                <th>Caster</th>
+                <th>296</th>
+                <th>24</th>
+                <th>0.667</th>
+            </tr>
+            <tr>
+                <th>Siege</th>
+                <th>912</th>
+                <th>41</th>
+                <th>1.00</th>
+            </tr>
+        </table>
     </div>
 
     <div>
-    <h3>
-        Page Notes
-    </h3>
-
+        <h3>
+            Page Notes
+        </h3>
+        <h5>On average, how many requests can ab complete in 10 seconds with various power of two concurrency levels between 1 and 256?</h5>
+        <ul>
+            <li>1: 196</li>
+            <li>4: 2048</li>
+            <li>16: 3145</li>
+            <li>64: 9384</li>
+            <li>256: 9917</li>
+        </ul>
+        <h5>Why are there diminishing returns at higher concurrency levels?</h5>
+        I think there are diminishing returns because the server side resources are getting used up and so cannot respond to the demand.
+        <h5>What’s the difference when requesting HTTP and HTTPS?</h5>
+        <ul>
+            <li>1: 1161</li>
+            <li>4: 4942</li>
+            <li>16: 19660</li>
+            <li>64: 26884</li>
+            <li>256: Finished 50000 requests in 3.640s, 137360 estimated</li>
+        </ul>
+        I believe that http has a much quicker handshake/security so it is able to process more requests
+        <h5>How can github respond so quickly?</h5>
+        I would bet that the github page is cached in a CDN near me, or that the IP of the github page is in the DNS server nearest me.
+        <h5>What is your site’s “Time to Interactive” according to PageSpeed Insights?</h5>
+        The Time to Interactive is 1.0s
     </div>
 
 
